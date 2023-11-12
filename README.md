@@ -16,7 +16,7 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
 
 ### Getting EnvyControl Without SystemD
 
-#### Artix - WIP
+#### ~~Artix~~ - WIP
 
 1. Install `envycontrol-openrc` or `envycontrol-dinit` or `envycontrol-runit` or `envycontrol-s6` from the AUR
   
