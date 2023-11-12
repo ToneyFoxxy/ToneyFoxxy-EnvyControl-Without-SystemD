@@ -126,8 +126,8 @@ sudo envycontrol --reset
 
 1. Install https://github.com/bayasdev/envycontrol
 2. If you are using Runit or S6, you will need to install nvidia-persistenced daemon
-   - Runit: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/runit/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt
-   - S6: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt
+   - Runit: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/runit/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
+   - S6: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
 
 ### GUIs
 
