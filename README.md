@@ -85,31 +85,22 @@ options:
 
 
 sudo envycontrol -s nvidia --dm lightdm
-
 ```
 Set graphics mode to hybrid and enable fine-grained power control:
-
 ```
 sudo envycontrol -s hybrid --rtd3
-
 ```
 Set graphics mode to nvidia, enable ForceCompositionPipeline and Coolbits with a value of 24:
-
 ```
 sudo envycontrol -s nvidia --force-comp --coolbits 24
-
 ```
 Set current graphics mode to nvidia and specify to setup LightDM display manager
-
 ```
 Query the current graphics mode:
-
 ```
 envycontrol --query
-
 ```
 Revert all changes made by EnvyControl:
-
 ```
 sudo envycontrol --reset
 
