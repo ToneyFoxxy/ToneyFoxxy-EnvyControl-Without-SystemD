@@ -54,4 +54,4 @@ Open an issue and **don't forget to complete all the requested fields!**
 
 ## Buy the original author a coffee
 
-[PayPal](https://www.paypal.com/paypalme/bayasdev)
+https://www.paypal.com/paypalme/bayasdev
