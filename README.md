@@ -10,7 +10,7 @@ Optimus made easy, without SystemD
 
 # EnvyControl
 
-EnvyControl is a CLI tool that provides an easy way to switch between GPU modes on Nvidia Optimus systems (i.e laptops with hybrid Intel + Nvidia or AMD + Nvidia graphics configurations) under Linux.
+EnvyControl is a CLI tool that provides an easy way to switch between GPU modes on Nvidia Optimus systems (i.e laptops with hybrid Intel + Nvidia or AMD + Nvidia graphics configurations) under Linux. I have modified it to work across all popular init systems, however automatic display manager detection is disabled due to there being no good way to achieve it without SystemD. In practical terms, the only change is that you need to specify a display manager.
 
 ### License
 
@@ -117,35 +117,15 @@ sudo envycontrol --reset
 
 ### Getting EnvyControl Without SystemD
 
-#### Artix OpenRC - WIP
+#### Artix - WIP
 
-1. `paru -S envycontrol-openrc`
+1. Run `paru -S envycontrol-openrc` or `paru -S envycontrol-dinit` or `paru -S envycontrol-runit` or `paru -S envycontrol-s6` to install
 3. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
-#### Artix Dinit - WIP
+#### Manual
 
-1. `paru -S envycontrol-dinit`
-2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
-
-#### Artix Runit - WIP
-
-1. `paru -S envycontrol-runit`
-2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
-
-#### Artix S6 - WIP
-
-1. `paru -S envycontrol-s6`
-2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
-
-#### From source
-
-1. Clone this repository with `git clone https://github.com/bayasdev/envycontrol.git` or download the latest tarball from the releases page
-2. Run the script from the root of the repository like this `python ./envycontrol.py -s <MODE>`
-
-#### Install globally as a pip package
-
-- From the root of the cloned repository run `sudo pip install .`
-- Now you can run `sudo envycontrol -s <MODE>` from any directory to switch graphics modes.
+1. Install https://github.com/bayasdev/envycontrol
+2. 
 
 ### GUIs
 
