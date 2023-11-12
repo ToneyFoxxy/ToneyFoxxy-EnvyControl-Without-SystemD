@@ -39,7 +39,7 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
      
    - Runit - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/Runit/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
      
-   - S6 - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl [URL](https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/S6/envycontrol.py) > /usr/lib/python3.11/site-packages/envycontrol.py`
+   - S6 - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/S6/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
 
 5. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
