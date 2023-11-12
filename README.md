@@ -85,10 +85,10 @@ options:
 
 ### Example commands
 
-Set current graphics mode to nvidia and specify to setup LightDM display manager
+Set current graphics mode to nvidia on SDDM display manager
 
 ```
-sudo envycontrol -s nvidia --dm lightdm
+sudo envycontrol -s nvidia --dm sddm
 ```
 
 Set graphics mode to hybrid and enable fine-grained power control:
