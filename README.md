@@ -124,18 +124,24 @@ sudo envycontrol --reset
 
 #### Manual
 
-1. Install `nvidia-utils-openrc` or `nvidia-utils-dinit` or `nvidia-utils` and `nvidia` from the World repo
-2. Install https://github.com/bayasdev/envycontrol
-3. If you are using Runit or S6, you will need to install the nvidia-persistenced daemon
-   - Runit: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/runit/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
-   - S6: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/s6/sv/nvidia-persistenced.txt`
-4. Install my version of envycontrol.py:
+###### 1. Install `nvidia-utils-openrc` or `nvidia-utils-dinit` or `nvidia-utils` and `nvidia` from the World repo
+###### 2. Install https://github.com/bayasdev/envycontrol
+###### 3. If you are using Runit or S6, you will need to install the nvidia-persistenced daemon
+   - Runit:
+```
+   `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/runit/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
+```
+   - S6:
+```
+   `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/s6/sv/nvidia-persistenced.txt`
+```
+###### 4. Install my version of envycontrol.py:
    - OpenRC - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/OpenRC/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
    - Dinit - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/Dinit/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
    - Runit - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/Runit/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
    - S6 - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl [URL](https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/S6/envycontrol.py) > /usr/lib/python3.11/site-packages/envycontrol.py`
-5. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
-6. Reboot
+###### 5. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
+###### 6. Reboot
 
 ### GUIs
 
