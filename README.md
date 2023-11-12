@@ -12,6 +12,8 @@ Optimus made easy, without SystemD
 
 I have modified EnvyControl to work across all popular init systems, however automatic display manager detection is disabled due to there being no good way to achieve it without SystemD. In practical terms, the only change is that you need to specify a display manager.
 
+Please refer to https://github.com/bayasdev/envycontrol for more information about EnvyControl
+
 ### Getting EnvyControl Without SystemD
 
 #### Artix - WIP
@@ -41,38 +43,6 @@ I have modified EnvyControl to work across all popular init systems, however aut
 5. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
 6. Reboot
-
-### Example commands
-
-Set graphics mode to nvidia on SDDM display manager
-
-```
-sudo envycontrol -s nvidia --dm sddm
-```
-
-Set graphics mode to hybrid and enable fine-grained power control:
-
-```
-sudo envycontrol -s hybrid --rtd3
-```
-
-Set graphics mode to nvidia, enable ForceCompositionPipeline and Coolbits with a value of 24:
-
-```
-sudo envycontrol -s nvidia --force-comp --coolbits 24
-```
-
-Query the current graphics mode:
-
-```
-envycontrol --query
-```
-
-Revert all changes made by EnvyControl:
-
-```
-sudo envycontrol --reset
-```
 
 ## Frequently Asked Questions (FAQ)
 
