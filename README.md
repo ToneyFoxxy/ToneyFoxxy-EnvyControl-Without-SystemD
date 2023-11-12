@@ -22,11 +22,11 @@ EnvyControl is free and open-source software released under the [MIT](https://gi
 
 Keep in mind any custom X.org configuration may get deleted or overwritten when switching modes.
 
-## Features
+### Features
 
 - Written in Python 3+ for portability and compatibility
 - Works across all major Linux distros ([tested distros](https://github.com/bayasdev/envycontrol/wiki/Frequently-Asked-Questions#tested-distros))
-- 🖥Supports GDM, SDDM and LightDM display managers ([manual setup instructions](https://github.com/bayasdev/envycontrol/wiki/Frequently-Asked-Questions#what-to-do-if-my-display-manager-is-not-supported) also available)
+- Supports GDM, SDDM and LightDM display managers ([manual setup instructions](https://github.com/bayasdev/envycontrol/wiki/Frequently-Asked-Questions#what-to-do-if-my-display-manager-is-not-supported) also available)
 - Save battery with integrated graphics mode
 - PCI-Express Runtime D3 (RTD3) Power Management support for Turing and later
 - Coolbits support for GPU overclocking
@@ -34,7 +34,7 @@ Keep in mind any custom X.org configuration may get deleted or overwritten when 
 
 ### Graphics modes
 
-## Integrated
+#### Integrated
 
 - The integrated Intel or AMD iGPU is used exclusively
 - Nvidia dGPU is turned off to reduce power consumption
