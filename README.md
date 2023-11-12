@@ -128,7 +128,7 @@ sudo envycontrol --reset
 2. Install https://github.com/bayasdev/envycontrol
 3. If you are using Runit or S6, you will need to install the nvidia-persistenced daemon
    - Runit: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/runit/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
-   - S6: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
+   - S6: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/s6/sv/nvidia-persistenced.txt`
 4. Install my version of envycontrol.py:
    - OpenRC - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/OpenRC/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
    - Dinit - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/Dinit/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
