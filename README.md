@@ -120,7 +120,7 @@ sudo envycontrol --reset
 #### Artix - WIP
 
 1. Run `paru -S envycontrol-openrc` or `paru -S envycontrol-dinit` or `paru -S envycontrol-runit` or `paru -S envycontrol-s6` to install
-3. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
+2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
 #### Manual
 
@@ -128,6 +128,7 @@ sudo envycontrol --reset
 2. If you are using Runit or S6, you will need to install nvidia-persistenced daemon
    - Runit: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/runit/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
    - S6: `sudo curl https://raw.githubusercontent.com/NVIDIA/nvidia-persistenced/main/init/sysv/nvidia-persistenced.template > /etc/s6/sv/nvidia-persistenced.txt && chmod +x /etc/runit/sv/nvidia-persistenced.txt`
+3. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
 ### GUIs
 
