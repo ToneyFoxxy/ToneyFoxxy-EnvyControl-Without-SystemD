@@ -119,7 +119,7 @@ sudo envycontrol --reset
 
 #### Artix - WIP
 
-1. Run `paru -S envycontrol-openrc` or `paru -S envycontrol-dinit` or `paru -S envycontrol-runit` or `paru -S envycontrol-s6` to install
+1. Install `envycontrol-openrc` or `envycontrol-dinit` or `envycontrol-runit` or `envycontrol-s6` with your AUR helper of choice
 2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
 #### Manual
