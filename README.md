@@ -45,11 +45,25 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
 
 6. Reboot
 
-## Frequently Asked Questions:
+### Changes
+
+1. Modified nvidia-persistenced start commands
+
+2. Modified nvidia-persistenced stop commands
+
+3. Removed ability to not specify a display manager
+
+4. Added `manual` as an accepted display manager; `--dm manual`
+
+5. Created manual display manager warning
+
+6. Modified error messages to reflect the changes
+
+### Frequently Asked Questions:
 
 [Read here](https://github.com/bayasdev/envycontrol/wiki/Frequently-Asked-Questions)
 
-## I have a problem:
+### I have a problem:
 
 Open an issue and **don't forget to complete all the requested fields!**
 
