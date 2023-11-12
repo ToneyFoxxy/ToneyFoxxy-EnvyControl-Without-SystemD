@@ -14,7 +14,7 @@ I have modified EnvyControl to work across all popular init systems, however aut
 
 Please refer to https://github.com/bayasdev/envycontrol for more information about EnvyControl
 
-### Getting EnvyControl Without SystemD
+### Installation:
 
 #### ~~Artix~~: - WIP
 
@@ -22,7 +22,7 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
   
 3. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
-#### Manual install:
+#### Manual:
 1. Install `nvidia-utils-openrc` or `nvidia-utils-dinit` or `nvidia-utils` and `nvidia` or `nvidia-dkms` from the World repo
 
 2. If you are using Runit or S6, you will need to install the nvidia-persistenced daemon
