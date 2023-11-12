@@ -40,7 +40,7 @@ Keep in mind any custom X.org configuration may get deleted or overwritten when 
 - Nvidia dGPU is turned off to reduce power consumption
 - External screens cannot be used if the video ports are wired to the dGPU
 
-## Hybrid
+#### Hybrid
 
 - Enables PRIME render offloading
 - RTD3 allows the dGPU to be dynamically turned off when not in use
@@ -52,7 +52,7 @@ Keep in mind any custom X.org configuration may get deleted or overwritten when 
   - Only works in Turing and later
 - Performance on external screens might be reduced
 
-## Nvidia
+#### Nvidia
 
 - The Nvidia dGPU is used exclusively
 - Higher graphical performance and higher power consumption
@@ -117,39 +117,39 @@ sudo envycontrol --reset
 
 ### Getting EnvyControl Without SystemD
 
-## Artix OpenRC - WIP
+#### Artix OpenRC - WIP
 
 1. `paru -S envycontrol-openrc`
 3. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
-## Artix Dinit - WIP
+#### Artix Dinit - WIP
 
 1. `paru -S envycontrol-dinit`
 2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
-## Artix Runit - WIP
+#### Artix Runit - WIP
 
 1. `paru -S envycontrol-runit`
 2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
-## Artix S6 - WIP
+#### Artix S6 - WIP
 
 1. `paru -S envycontrol-s6`
 2. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
-## From source
+#### From source
 
 1. Clone this repository with `git clone https://github.com/bayasdev/envycontrol.git` or download the latest tarball from the releases page
 2. Run the script from the root of the repository like this `python ./envycontrol.py -s <MODE>`
 
-## Install globally as a pip package
+#### Install globally as a pip package
 
 - From the root of the cloned repository run `sudo pip install .`
 - Now you can run `sudo envycontrol -s <MODE>` from any directory to switch graphics modes.
 
 ### GUIs
 
-## Gnome Extension
+#### Gnome Extension
 
 The [GPU profile selector](https://github.com/LorenzoMorelli/GPU_profile_selector) extension provides a simple way to switch between graphics modes in a few clicks, you can get it from [here](https://extensions.gnome.org/extension/5009/gpu-profile-selector/).
 
@@ -157,7 +157,7 @@ The [GPU profile selector](https://github.com/LorenzoMorelli/GPU_profile_selecto
 
 ![gpu profile selector screenshot](https://github.com/LorenzoMorelli/GPU_profile_selector/raw/main/img/extension_screenshot.png)
 
-## KDE Widget
+#### KDE Widget
 
 [Optimus GPU Switcher](https://github.com/enielrodriguez/optimus-gpu-switcher) allows you to change the GPU mode easily, plus its icon is dynamic and serves as an indicator of the current mode.
 
@@ -165,11 +165,11 @@ The [GPU profile selector](https://github.com/LorenzoMorelli/GPU_profile_selecto
 
 ### Tips
 
-## `nvidia` kernel module is named `nvidia-current` on Debian
+#### `nvidia` kernel module is named `nvidia-current` on Debian
 
 If you're running into this situation you can use the `--use-nvidia-current` flag to make EnvyControl use the correct module name.
 
-## Wayland session is missing on Gnome 43+
+#### Wayland session is missing on Gnome 43+
 
 GDM now requires `NVreg_PreserveVideoMemoryAllocations` kernel parameter which breaks sleep in nvidia and hybrid mode, as well as rtd3 in hybrid mode, so EnvyControl disables it, if you need a Wayland session follow the instructions below
 
@@ -178,18 +178,18 @@ sudo systemctl enable nvidia-{suspend,resume,hibernate}
 sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 ```
 
-## The `/usr/share/sddm/scripts/Xsetup` file is missing on my system
+#### The `/usr/share/sddm/scripts/Xsetup` file is missing on my system
 
 If this ever happens please run `sudo envycontrol --reset-sddm`.
 
-### Frequently Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 [Read here](https://github.com/bayasdev/envycontrol/wiki/Frequently-Asked-Questions)
 
-### I have a problem
+## I have a problem
 
 Open an issue and **don't forget to complete all the requested fields!**
 
-### Buy the original author a coffee
+## Buy the original author a coffee
 
 [PayPal](https://www.paypal.com/paypalme/bayasdev)
