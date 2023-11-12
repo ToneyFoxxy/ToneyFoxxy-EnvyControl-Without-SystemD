@@ -85,8 +85,10 @@ options:
 
 ###Example commands:
 
-sudo envycontrol -s nvidia --dm lightdm
-```
+
+Set current graphics mode to nvidia and specify to setup LightDM display manager
+`sudo envycontrol -s nvidia --dm lightdm`
+
 Set graphics mode to hybrid and enable fine-grained power control:
 ```
 sudo envycontrol -s hybrid --rtd3
@@ -95,7 +97,6 @@ Set graphics mode to nvidia, enable ForceCompositionPipeline and Coolbits with a
 ```
 sudo envycontrol -s nvidia --force-comp --coolbits 24
 ```
-Set current graphics mode to nvidia and specify to setup LightDM display manager
 ```
 Query the current graphics mode:
 ```
