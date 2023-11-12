@@ -83,6 +83,7 @@ options:
   --verbose             Enable verbose mode
 ```
 
+###Example commands:
 
 sudo envycontrol -s nvidia --dm lightdm
 ```
