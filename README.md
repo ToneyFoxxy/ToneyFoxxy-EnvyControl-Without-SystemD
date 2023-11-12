@@ -18,7 +18,7 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
 
 #### ~~Artix~~ - WIP
 
-1. Install `envycontrol-openrc` or `envycontrol-dinit` or `envycontrol-runit` or `envycontrol-s6` from the AUR
+1. ~~Install `envycontrol-openrc` or `envycontrol-dinit` or `envycontrol-runit` or `envycontrol-s6` from the AUR~~
   
 3. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
 
