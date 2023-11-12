@@ -85,7 +85,7 @@ options:
 
 ### Example commands
 
-Set current graphics mode to nvidia on SDDM display manager
+Set graphics mode to nvidia on SDDM display manager
 
 ```
 sudo envycontrol -s nvidia --dm sddm
