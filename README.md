@@ -41,9 +41,11 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
      
    - S6 - `sudo rm /usr/lib/python3.11/site-packages/envycontrol.py && curl https://raw.githubusercontent.com/ToneyFoxxy/ToneyFoxxy-EnvyControl-Without-SystemD/main/S6/envycontrol.py > /usr/lib/python3.11/site-packages/envycontrol.py`
 
-5. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
+5. Add "envycontrol" to the ignored packages in "/etc/pacman.conf" so it doesn't get updated automatically; `IgnorePkg   = envycontrol`
 
-6. Reboot
+7. Run `sudo envycontrol -s <MODE> --dm <DISPLAY MANAGER>` to switch graphics modes
+
+8. Reboot
 
 ### Changes
 
