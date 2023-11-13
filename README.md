@@ -63,10 +63,6 @@ Please refer to https://github.com/bayasdev/envycontrol for more information abo
 
 [Read here](https://github.com/bayasdev/envycontrol/wiki/Frequently-Asked-Questions)
 
-### I have a problem:
-
-Open an issue and **don't forget to complete all the requested fields!**
-
 ## Buy the original author a coffee:
 
 https://www.paypal.com/paypalme/bayasdev
