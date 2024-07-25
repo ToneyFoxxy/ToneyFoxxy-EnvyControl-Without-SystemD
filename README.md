@@ -10,6 +10,8 @@ Optimus made easy, without SystemD
 
 # EnvyControl:
 
+(Project is on hold due to life problems, IK typical but I will try my best to continue it)
+
 I have modified EnvyControl to work across all popular init systems, however automatic display manager detection is disabled due to there being no good way to achieve it without SystemD. In practical terms, the only change is that you need to specify a display manager.
 
 Please refer to https://github.com/bayasdev/envycontrol for more information about EnvyControl
